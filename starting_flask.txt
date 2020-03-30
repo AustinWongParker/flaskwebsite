@@ -1,0 +1,21 @@
+Quick Start: https://flask.palletsprojects.com/en/1.1.x/quickstart/
+
+minimal Flask application:
+
+from flask import Flask
+app = Flask(__name__)
+
+@app.route('/')
+def hello_world():
+    return 'Hello, World!'
+
+
+1. Have virtual env running (env)
+2. FLASK_APP=website.py
+3. flask run
+4. Go to 127.0.0.1:5000/
+
+To run in debug mode:
+
+1. set FLASK_ENV=development
+2. flask run
