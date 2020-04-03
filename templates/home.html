@@ -2,5 +2,14 @@
 {% extends 'layout.html' %} <!-- Interhited from layout.html -->
 
 {% block body %}
-  <h1>Austin Wong-Parker</h1>
+<html>
+<body>
+<!--<img src="{{url_for('static', filename='github_photo.png')}}" />-->
+<!--<img src="{{url_for('static', filename='github_photo.png', width=10, height=10)}}" />-->
+<img src="/static/github_photo.png" height="300" width="300">
+<p> </p>
+<p> Hi, my name is Austin Wong-Parker. I'm an Information Technology Infrastructure - Software Security undergraduate. </p>
+</body>
+
+</html>
 {% endblock %}
