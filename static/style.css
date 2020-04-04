@@ -161,6 +161,38 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
     100%{ left: 0;}
 }
 
+.fa {
+  padding: 20px;
+  padding-left: 40px;
+
+  width: 30px;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Facebook */
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+/* Instagram */
+.fa-instagram {
+  background: #E1306C;
+  color: white;
+}
+
+/* LinkedIn */
+.fa-linkedin {
+  background: #0e76a8;
+  color: white;
+}
+
+
 /* Colors */
 .w3-amber,.w3-hover-amber:hover{color:#000!important;background-color:#ffc107!important}
 .w3-aqua,.w3-hover-aqua:hover{color:#000!important;background-color:#00ffff!important}
