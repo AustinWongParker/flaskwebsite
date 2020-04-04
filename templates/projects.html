@@ -2,25 +2,76 @@
 
 {% extends 'layout.html' %}
 
-{% block body2 %}
-
+<!-- TRACING GAME -->
+{% block p1 %}
 <div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
   <div class="w3-content">
     <div class="w3-third w3-center">
-      <i class="fa fa-coffee w3-padding-64 w3-text-red w3-margin-right"></i>
+      <img src=/static/tracing_game.png height="420" width="350" style="padding-top:100px;">
     </div>
 
     <div class="w3-twothird">
-      <h1>Projects</h1>
-      <h5 class="w3-padding-32">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h5>
-
-      <p class="w3-text-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
-        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-        laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <h1 style="padding:75px">Tracing Game</h1>
+      <h5 style="padding-left:75px"> Summer 2019 </h5>
+      <p style="padding-left:75px; color:grey">This is my tracing game made in python using the pygames library. The screenshot on the left is the start
+                                               menu. The goal of the game is to trace images from memory. The game was inspired from a Calligraphy quest in the game WoW.</p>
+      <p style="padding-left:75px; color:grey"> Access the Tracing Game here: <a href='https://github.com/AustinWongParker/tracing_game'> Github.</a> </p>
+      <!--<p style="padding:75px" class="w3-text-grey">fildhgjkhdfj</p>-->
     </div>
   </div>
 </div>
 {% endblock %}
+
+<!-- Discord API bot -->
+{% block p2 %}
+<div class="w3-row-padding w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-twothird">
+      <h1>Discord Bot - API</h1>
+      <h5 class="w3-padding-32">Winter 2019</h5>
+
+      <p class="w3-text-grey">Since discord is a daily part of my life, I decided to try using the API. The discord bot uses the integrated API through
+                              the developer app portal and connects to my personal server. Currently, the bot - once pinged - will display messages on why you should or
+                              should not study in CLA. In the future, the bot will get revamped and become more useful. I mainly created this project to work with APIs and
+                              implement asynch client / host connectivity.</p>
+      <p style="color:grey"> Access the Discord Bot here: <a href='https://github.com/AustinWongParker/cla_major_bot'> Github.</a> </p>
+    </div>
+
+    <div class="w3-third w3-center">
+      <img src="/static/discord_bot.png" height="370" width="350">
+    </div>
+  </div>
+</div>
+{% endblock %}
+
+<!-- CSCI 2021 -->
+{% block p3 %}
+<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-third w3-center">
+      <img src=/static/csci2021_project2.png height="420" width="350" style="padding-top:100px;">
+    </div>
+
+    <div class="w3-twothird">
+      <h1 style="padding:75px">CSCI 2021 Projects [private]</h1>
+      <h5 style="padding-left:75px"> Fall 2019 </h5>
+      <p style="padding-left:75px; color:grey">During my time in college at the UofM, CSCI2021 was definitely the hardest course I took. I made a lot of great friends and want to tribute
+                                               it here. This specific project was the second one in the course and dealt with bit-level operations in the C programming language. We wrote code
+                                               to simulate a clock changing its time through different bit positions. This program involved bit shifting, calling C structs, and manipulating
+                                               the use of an array. I wrote this project in C and the assembly language.</p>
+      <p style="padding-left:75px; color:grey"> The public may not access these projects - they're currently private repos; however, I'm open to sharing it upon special requests.</p>
+      <!--<p style="padding:75px" class="w3-text-grey">fildhgjkhdfj</p>-->
+    </div>
+  </div>
+</div>
+{% endblock %}
+
+
+
+
+
+
+
 
 <!-- Footer -->
 {% block footer %}
