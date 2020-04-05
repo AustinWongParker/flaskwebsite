@@ -46,5 +46,5 @@ def page_not_found:
 '''
 
 if __name__ == "__main__":
-    #app.run()
-    app.run(debug=True) # uncomment for debugging
+    app.run()
+    #app.run(debug=True) # uncomment for debugging

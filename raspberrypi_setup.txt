@@ -1,5 +1,7 @@
 https://www.codementor.io/@abhishake/minimal-apache-configuration-for-deploying-a-flask-app-ubuntu-18-04-phu50a7ft
 
+Sentdex: https://www.youtube.com/watch?list=PLQVvvaa0QuDc_owjTbIY4rbgXOFkUYOUB&v=qZNL4Ku1UQg&feature=emb_logo
+
 Raspberry Pi Stuff:
 
 pip: sudo apt-get install python3-pip
@@ -20,6 +22,6 @@ Start:               sudo service apache2 start
 Important places:
 ----------------
 
-~/Documents/flaskwebsite
-/var/www/html (I heard do not store your site here directly. Use the conf?)
+~/Documents/flaskwebsite (? useless I think)
+/var/www (I heard do not store your site here directly. Use the conf?)
 /etc/apache2/sites-available/flask_server.conf
