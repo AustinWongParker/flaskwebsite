@@ -1,8 +1,17 @@
 https://programwithus.com/learn-to-code/Pip-and-virtualenv-on-Windows/
 
+
+Windows
+~~~~~~~~~~
+
 1. cd into location
 2. ensure pip is installed. python get-pip.py
 3. pip install virtualenv
 4. Cd into project location.
 5. virtualenv env (when first creating the env)
 6. To activate: env\Scripts\activate (note its a backslash)
+
+
+Linux
+~~~~~~~
+.

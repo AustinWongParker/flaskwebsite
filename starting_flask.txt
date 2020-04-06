@@ -1,11 +1,9 @@
 Quick Start: https://flask.palletsprojects.com/en/1.1.x/quickstart/
 
-Linode: https://www.youtube.com/watch?v=YFBRVJPhDGY
-
 Windows
 ~~~~~~~~~~~
 1. Have virtual env running (env)
-2. set FLASK_APP=website.py
+2. set FLASK_APP=__init__.py
 3. flask run
 4. Go to 127.0.0.1:5000/
 
@@ -13,17 +11,3 @@ To run in debug mode:
 
 1. set FLASK_ENV=development
 2. flask run
-
-
-Raspbian
-~~~~~~~~~~~
-1. Have Virtual env running
-2. export FLASK_APP=website.py
-3. flask run
-
-    *This isn't working?
-      4. Go to 127.0.0.1:5000/
-      Note: if you want to access the it from your host computer, you have to do this:
-                flask run --host=0.0.0.0  then go to 127.0.0.1:5000/
-
-4. Go to IP address of raspberrypi and put it in the web browser (different machine / same network)
