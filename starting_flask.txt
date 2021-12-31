@@ -11,3 +11,7 @@ To run in debug mode:
 
 1. set FLASK_ENV=development
 2. flask run
+
+Update:
+$env:FLASK_APP = "__init__.py"
+flask run
