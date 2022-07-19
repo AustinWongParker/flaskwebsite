@@ -2,6 +2,45 @@
 
 {% extends 'layout.html' %}
 
+<!-- flask website -->
+{% block p00 %}
+<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-third w3-center">
+      <img src=/static/flaskpic.png height="420" width="350" style="padding-top:100px;">
+    </div>
+
+    <div class="w3-twothird">
+      <h1 style="padding:75px">Flask Python Website</h1>
+      <h5 style="padding-left:75px"> July 2022 </h5>
+      <p style="padding-left:75px; color:grey">This is my flask website repository. It contains my new site you are currently viewing on your browser! I re-launched in July 2022 with the goal of being a central hub to host my portfolio.
+                                               In addition to having this flask site, I plan on creating more sites with Django and react frameworks in the future.</p>
+      <p style="padding-left:75px; color:grey"> Access the Tracing Game here: <a href='https://github.com/AustinWongParker/flaskwebsite'> Github.</a> </p>
+    </div>
+  </div>
+</div>
+{% endblock %}
+
+<!-- Hackaton WebScrapper -->
+{% block p0 %}
+<div class="w3-row-padding w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-twothird">
+      <h1>Hackaton - Webscrapper</h1>
+      <h5 class="w3-padding-32">Spring 2020</h5>
+
+      <p class="w3-text-grey">Through the Minority Programmers Association(MPA), myself and four other developers participated in a hackathon through the MPA program virtually through the James Madison University. We received an <a href='https://www.youtube.com/watch?v=A8TPYXAGReI'> honorable mention here. </a></p>
+      <p style="color:grey"> Access the WebScrapper here: <a href='https://github.com/AustinWongParker/Hackathon_WebScraper'> Github.</a> </p>
+      <p style="color:grey"> Image from <a href='https://www.scrapingbee.com/blog/python-web-scraping-beautiful-soup/'> source.</a></p>
+    </div>
+
+    <div class="w3-third w3-center">
+      <img src="/static/bs4.png" height="370" width="350">
+    </div>
+  </div>
+</div>
+{% endblock %}
+
 <!-- TRACING GAME -->
 {% block p1 %}
 <div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
@@ -31,8 +70,7 @@
       <h5 class="w3-padding-32">Winter 2019</h5>
 
       <p class="w3-text-grey">Since discord is a daily part of my life, I decided to try using the API. The discord bot uses the integrated API through
-                              the developer app portal and connects to my personal server. Currently, the bot - once pinged - will display messages on why you should or
-                              should not study in CLA. In the future, the bot will get revamped and become more useful. I mainly created this project to work with APIs and
+                              the developer app portal and connects to my personal server. I mainly created this project to work with external APIs and
                               implement asynch client / host connectivity.</p>
       <p style="color:grey"> Access the Discord Bot here: <a href='https://github.com/AustinWongParker/cla_major_bot'> Github.</a> </p>
     </div>

@@ -20,6 +20,10 @@ def projects():
 def education():
     return render_template('education.html')
 
+@app.route('/contact')
+def contact():
+    return redirect('https://www.linkedin.com/in/a-w-p/')
+
 @app.route('/howto')
 def howto():
     return render_template('howto.html')
