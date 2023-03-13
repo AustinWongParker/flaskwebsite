@@ -1,0 +1,13 @@
+How to update website:
+--------------------
+1. If you have access to the website via SSH putty:
+    - Make code change -> commit / push -> ready to go on git
+    - Go to Putty, log in via IP (from aws Lightsail if forgotten), set Auth settings and grab private key
+    - Putty -> Ubuntu 
+    - cd /var/www, navigate to flaskwebsite
+    - git pull your changes in /var/www/flaskwebsite
+    - git might be dumb and say you don't have changes. Ignore it.
+    - Once changes have been pulled -> systemctl reload apache2.service (No need to restart lightsail)
+
+2. If you do NOT have access to the website:
+    - Need to access Lightsail, grab IP, and go to puttygen and re-create private key. Put IP address into putty and Auth/Credentials to access via SSH
