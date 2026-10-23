@@ -1,13 +1,25 @@
-How to update website:
+How to update website
 --------------------
-1. If you have access to the website via SSH putty:
-    - Make code change -> commit / push -> ready to go on git
-    - Go to Putty, log in via IP (from aws Lightsail if forgotten), set Auth settings and grab private key
-    - Putty -> Ubuntu 
-    - cd /var/www, navigate to flaskwebsite
-    - git pull your changes in /var/www/flaskwebsite/flaskwebsite
-    - git might be dumb and say you don't have changes. Ignore it.
-    - Once changes have been pulled -> sudo systemctl reload apache2.service (No need to restart lightsail)
+The site is hosted for free on GitHub Pages. GitHub rebuilds and publishes it
+automatically every time you push to master (see .github/workflows/pages.yml).
 
-2. If you do NOT have access to the website:
-    - Need to access Lightsail, grab IP, and go to puttygen and re-create private key. Put IP address into putty and Auth/Credentials to access via SSH
+1. Edit the pages in templates/ (or add images to static/).
+2. Preview it locally: flask run, then open http://127.0.0.1:5000/
+   (setup steps are in starting_flask.txt)
+3. Commit and push to master.
+4. Open the "Actions" tab on GitHub. When the run turns green (about a minute),
+   the live site is updated.
+
+Adding a new page:
+- Add a route in app.py that returns render_template('yourpage.html').
+  build.py finds every route on its own and saves it as yourpage.html.
+- Link to it with href="yourpage", like the other menu links.
+
+Images and files:
+- Only files in static/ that a page links to get published to the live site.
+  Anything else in static/ stays off the website, but is still visible to
+  anyone browsing the public GitHub repo.
+
+To test the build yourself: python build.py (the output goes to _site/)
+
+(The old AWS Lightsail / PuTTY steps are in this file's git history.)

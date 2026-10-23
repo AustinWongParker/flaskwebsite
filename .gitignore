@@ -1,4 +1,8 @@
+# Python virtual environments (create your own locally, never commit them)
 venv/
+env/
+flask/
+.venv/
 
 *.pyc
 __pycache__/
@@ -12,3 +16,6 @@ htmlcov/
 dist/
 build/
 *.egg-info/
+
+# Static site output from build.py (GitHub Actions rebuilds it on every push)
+_site/
